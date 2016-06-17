@@ -1,0 +1,27 @@
+{
+  "name": "gulp",
+  "version": "0.0.1",
+  "description": "Just my skeleton for gulp",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myrkotyn/gulp-skeleton-by-myrkotyn.git"
+  },
+  "author": "Myrkotyn (prohorovychua@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Myrkotyn/gulp-skeleton-by-myrkotyn/issues"
+  },
+  "homepage": "https://github.com/Myrkotyn/gulp-skeleton-by-myrkotyn#readme",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.3"
+  }
+}
