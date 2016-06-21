@@ -21,8 +21,16 @@ var dist = {
     html: "app/dist",
     image: "app/dist/img",
     font: "app/dist/font",
-    jsFolder: "app/dist/js"
+    jsFolder: "app/dist/js",
+    vendorFolder: "app/dist/vendor"
 }
+
+
+
+gulp.task("move", function() {
+    gulp.src('bower_components/jquery/dist/jquery.min.js')
+    .pipe(gulp.dest(dist.vendorFolder));
+})
 
 //
 //taks for all style

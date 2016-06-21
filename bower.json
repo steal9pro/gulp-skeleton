@@ -1,0 +1,20 @@
+{
+  "name": "gulp",
+  "description": "Just my skeleton for gulp",
+  "main": "gulpfile.js",
+  "authors": [
+    "Myrkotyn (prohorovychua@gmail.com)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Myrkotyn/gulp-skeleton-by-myrkotyn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
