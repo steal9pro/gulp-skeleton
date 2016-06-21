@@ -25,11 +25,21 @@ var dist = {
     vendorFolder: "app/dist/vendor"
 }
 
+//
+//task for move vendors to static folder
+//
 
+gulp.task("move", ['move:bootstrap', 'move:jquery'], function() {})
 
-gulp.task("move", function() {
+gulp.task("move:jquery", function() {
     gulp.src('bower_components/jquery/dist/jquery.min.js')
-    .pipe(gulp.dest(dist.vendorFolder));
+        .pipe(gulp.dest(dist.vendorFolder));
+})
+
+gulp.task("move:bootstrap", function() {
+    gulp.src('bower_components/bootstrap/dist/**/*')
+        .pipe(gulp.dest(dist.vendorFolder +
+            '/bootstrap'));
 })
 
 //
@@ -67,8 +77,12 @@ gulp.task("js", function() {
 //
 gulp.task("image:build", function() {
     gulp.src(source.image)
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest(dist.image))
+        .pipe(imagemin({
+            optimizationLevel: 3,
+            progressive: true,
+            interlaced: true
+        }))
+        .pipe(gulp.dest(dist.image))
 })
 //
 //task for fonts
